@@ -1,16 +1,15 @@
 import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const sofadiOne = localFont({
+  src: "./fonts/SofadiOne.woff",
+  variable: "--font-sofadi-one",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+export const recoleta = localFont({ src: "./fonts/recoleta-regulardemo.woff" });
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +19,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        <div className="w-full flex justify-center h-10 bg-red-500">
+          <h1 className="text-sm text-white font-bold text-center flex items-center">
+            Plane ahead and save upto $300! <span> </span>
+            <span>&nbsp;</span>
+            <Link href="/about" className="underline">
+              Learn More
+            </Link>
+          </h1>
+        </div>
+        <div className="my-4">{children}</div>
       </body>
     </html>
   );
