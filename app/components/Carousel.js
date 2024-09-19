@@ -29,7 +29,7 @@ const CarouselComponent = () => {
     },
     {
       id: 2,
-      image: "/images/phone-3.png",
+      image: "/images/Phone-3.png",
       heading: "Smart soothing",
       side: "right",
       position: "top",
@@ -37,7 +37,7 @@ const CarouselComponent = () => {
     },
     {
       id: 3,
-      image: "/images/phone-2.png",
+      image: "/images/Phone-2.png",
       heading: "Smart soothing",
       side: "left",
       position: "mid",
@@ -45,7 +45,7 @@ const CarouselComponent = () => {
     },
     {
       id: 4,
-      image: "/images/phone-4.png",
+      image: "/images/Phone-4.png",
       heading: "Sounds for better sleep",
       side: "right",
       position: "mid",
