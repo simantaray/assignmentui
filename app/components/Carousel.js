@@ -54,13 +54,13 @@ const CarouselComponent = () => {
   ];
 
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full px-0 xl:px-32">
       <div className="relative block sm:hidden">
         <Carousel
           onChange={handleInfoChange}
           useKeyboardArrows={true}
           showThumbs={false}
-          // autoPlay={true}
+          autoPlay={true}
           centerMode={true}
           centerSlidePercentage={70}
           stopOnHover={false}
@@ -68,6 +68,7 @@ const CarouselComponent = () => {
           showArrows={false}
           interval={10000}
           showStatus={false}
+          // swipeable={false}
         >
           {infoText.map((URL, index) => (
             <div key={index} className={`w-full flex flex-row relative`}>
@@ -85,7 +86,7 @@ const CarouselComponent = () => {
           onChange={handleInfoChange}
           useKeyboardArrows={true}
           showThumbs={false}
-          // autoPlay={true}
+          autoPlay={true}
           centerMode={true}
           centerSlidePercentage={100}
           stopOnHover={false}
@@ -93,6 +94,8 @@ const CarouselComponent = () => {
           showArrows={false}
           interval={10000}
           showStatus={false}
+          swipeable={true}
+          emulateTouch={true}
         >
           {infoText.map((URL, index) => (
             <div key={index} className={`w-full flex flex-row relative`}>
