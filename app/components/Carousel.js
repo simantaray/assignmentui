@@ -60,7 +60,7 @@ const CarouselComponent = () => {
           onChange={handleInfoChange}
           useKeyboardArrows={true}
           showThumbs={false}
-          autoPlay={true}
+          // autoPlay={true}
           centerMode={true}
           centerSlidePercentage={70}
           stopOnHover={false}
@@ -81,7 +81,7 @@ const CarouselComponent = () => {
           onChange={handleInfoChange}
           useKeyboardArrows={true}
           showThumbs={false}
-          autoPlay={true}
+          // autoPlay={true}
           centerMode={true}
           centerSlidePercentage={100}
           stopOnHover={false}
