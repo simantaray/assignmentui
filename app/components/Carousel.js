@@ -55,7 +55,7 @@ const CarouselComponent = () => {
 
   return (
     <div className="w-full max-w-7xl">
-      <div className="block sm:hidden">
+      <div className="relative block sm:hidden">
         <Carousel
           onChange={handleInfoChange}
           useKeyboardArrows={true}
@@ -71,12 +71,16 @@ const CarouselComponent = () => {
         >
           {infoText.map((URL, index) => (
             <div key={index} className={`w-full flex flex-row relative`}>
-              <img className="" alt={`Image ${index + 1}`} src={URL.image} />
+              <img
+                className="pb-8"
+                alt={`Image ${index + 1}`}
+                src={URL.image}
+              />
             </div>
           ))}
         </Carousel>
       </div>
-      <div className="hidden sm:block">
+      <div className="relative hidden sm:block">
         <Carousel
           onChange={handleInfoChange}
           useKeyboardArrows={true}
@@ -100,7 +104,7 @@ const CarouselComponent = () => {
                 />
               </div>
               <img
-                className="px-64 xl:px-[510px]"
+                className="px-64 xl:px-[510px] pb-8"
                 alt={`Image ${index + 1}`}
                 src={URL.image}
               />

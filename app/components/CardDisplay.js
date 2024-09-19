@@ -7,7 +7,7 @@ const recoleta = localFont({
 
 export default function CardDisplay({ infoText, info }) {
   return (
-    <div className={`text-center mt-4 p-2 mx-16`}>
+    <div className={`text-center p-2 mx-16`}>
       <h1
         className={`text-xl lg:text-2xl font-bold mb-2 text-gray-800 ${recoleta.className}`}
       >
